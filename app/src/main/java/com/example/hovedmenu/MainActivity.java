@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageView billede;
     TextView overskrift;
     TextView tekst;
-    WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,9 +51,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         if (view == søg){
-            webView = new WebView(this);
-            webView.loadUrl("https://javabog.dk");
-            setContentView(webView);
+            Intent i = new Intent(this, WebActivity.class);
+            startActivity(i);
         }
 
     }
