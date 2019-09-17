@@ -3,6 +3,7 @@ package com.example.hovedmenu;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
@@ -14,7 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     Button knap1;
     Button knap2;
-    Button søg;
+    Button søg, søg2;
     ImageView billede;
     TextView overskrift;
     TextView tekst;
@@ -31,10 +32,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tekst = findViewById(R.id.tekst);
         billede.setImageResource(R.drawable.icon);
         søg = findViewById(R.id.søg);
+        søg2 = findViewById(R.id.søg2);
 
         knap1.setOnClickListener(this);
         knap2.setOnClickListener(this);
         søg.setOnClickListener(this);
+        søg2.setOnClickListener(this);
 
     }
 
@@ -48,11 +51,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if (view == knap2){
             tekst.setText("Vejledning");
+
+
         }
 
         if (view == søg){
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://javabog.dk"));
+            startActivity(intent);
+
+
+        }
+
+        if (view == søg2){
             Intent i = new Intent(this, WebActivity.class);
             startActivity(i);
+
+
         }
 
     }

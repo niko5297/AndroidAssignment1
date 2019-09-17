@@ -1,0 +1,10 @@
+Er der nogle fordele og ulemper med programmatisk hhv. deklarativt layout ?
+    -
+
+    Står setContentView() øverst eller nederst når man bruger deklarativt (XML) layout ? Hvorfor?
+        -
+
+
+
+    Står setContentView() øverst eller nederst når man bruger programmatisk (Java) layout ? Hvorfor?
+        -
