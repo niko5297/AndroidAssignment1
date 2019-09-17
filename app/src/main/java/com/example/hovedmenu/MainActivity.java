@@ -42,12 +42,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
 
         if (view == knap1){
-            tekst.setText("Tekst 1");
+            tekst.setText("Indstillinger");
 
 
         }
         if (view == knap2){
-            tekst.setText("Tekst 2");
+            tekst.setText("Vejledning");
         }
 
         if (view == søg){
