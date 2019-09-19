@@ -1,12 +1,11 @@
 Er der nogle fordele og ulemper med programmatisk hhv. deklarativt layout ?
-    - Prgrammatisk:
+    - Programmatisk:
             - Enkelt
             - Let at forstå
             - Svært at få et godt resultat
     - Deklarativt:
             - Sværre at forstå.
             - Godt resultat kan opnås
-            -
 
     Står setContentView() øverst eller nederst når man bruger deklarativt (XML) layout ? Hvorfor?
         - Øverst, fordi du trækker views fra en XML fil.
